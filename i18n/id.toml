@@ -1,0 +1,23 @@
+[page]
+other = "Halaman"
+
+[of]
+other = "dari"
+
+[newer]
+other = "Selanjutnya"
+
+[older]
+other = "Sebelumnya"
+
+[tagged]
+other = "Dengan label"
+
+[read_more]
+other = "Baca selengkapnya..."
+
+[noteworthy_theme]
+other = "Noteworthy theme"
+
+[built_with_hugo]
+other = "Diberdayakan oleh Hugo"
