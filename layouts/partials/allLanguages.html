@@ -1,0 +1,17 @@
+<style>
+    .nav-i18n {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        font-size: small;
+    }
+</style>
+
+
+<ul class="nav-i18n">
+    {{ range $.Site.Home.AllTranslations }}
+        <li style="display:inline; padding-left: 0.5rem;">
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        </li>
+    {{ end }}
+</ul>
