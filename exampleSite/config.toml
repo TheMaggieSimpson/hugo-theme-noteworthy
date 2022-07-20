@@ -1,5 +1,4 @@
 baseURL = "https://example.com"
-languageCode = "en-us"
 title = "Noteworthy"
 theme = "noteworthy"
 enableRobotsTXT = true
@@ -119,3 +118,48 @@ disqusShortname = ""
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+
+# Multilingual
+[languages]
+    [languages.en]
+      weight = 1
+      languageCode = "en"
+      languageName = "English"
+      [languages.en.params]
+        description = "description"
+        #[[languages.en.menu.main]]
+        #  identifier = "about"
+        #  name = "About"
+        #  url = "/about/"
+        #  weight = 1 # Weight is an integer used to sort the menu items. The sorting goes from smallest to largest numbers. If weight is not defined for each menu entry, Hugo will sort the entries alphabetically.
+        [[languages.en.menu.main]]
+            identifier = "tags"
+            name = "Tags"
+            url = "/tags/"
+            weight = 2
+        [[languages.en.menu.main]]
+            name = "Archives"
+            identifier = "archives"
+            url = "/archives/"
+            weight = 3
+    [languages.id]
+      weight = 2
+        languageCode = "id"
+        languageName = "Indonesia"
+        [languages.id.params]
+          description = "deskripsi"
+          [[languages.id.menu.main]]
+            identifier = "tentang"
+            name = "Tentang"
+            url = "/about/"
+            weight = 1 # Weight is an integer used to sort the menu items. The sorting goes from smallest to largest numbers. If weight is not defined for each menu entry, Hugo will sort the entries alphabetically.
+          [[languages.id.menu.main]]
+              identifier = "tags"
+              name = "Tags"
+              url = "/tags/"
+              weight = 2
+          [[languages.id.menu.main]]
+              identifier = "arsip"
+              name = "Arsip"
+              url = "/archives/"
+              weight = 3
