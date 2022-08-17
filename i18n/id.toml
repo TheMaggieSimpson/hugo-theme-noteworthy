@@ -21,3 +21,6 @@ other = "Noteworthy theme"
 
 [built_with_hugo]
 other = "Diberdayakan oleh Hugo"
+
+[last_updated]
+other = "Diperbarui: "
