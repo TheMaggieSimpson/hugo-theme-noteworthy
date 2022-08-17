@@ -1,0 +1,8 @@
+<div>
+    {{ if .Date }}
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ end }}
+    {{ if ne .Lastmod .Date}}
+        <time style="font-style: italic">({{ i18n "last_updated" }} {{ .Lastmod.Format "January 2, 2006" }})</time>
+    {{ end }}
+</div>

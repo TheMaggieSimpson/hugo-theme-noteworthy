@@ -21,3 +21,6 @@ other = "Noteworthy theme"
 
 [built_with_hugo]
 other = "Built with Hugo"
+
+[last_updated]
+other = "Last updated: "
